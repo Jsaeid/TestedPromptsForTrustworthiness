@@ -1,0 +1,14 @@
+Software Vulnerabilities are frequently identified in software that is already in production.
+Consequently, software development teams must make changes in the source code to fix those vulnerabilities, which are usually present in code units that are lengthy and complex.
+Therefore, we need more than just vulnerability detection to identify the most (potentially) problematic code units in the early phases of development in order for the software development team to analyze them.
+To help the development of such a technique, we kindly ask you to map a C functions into priority groups to help a development team in the analysis. The priority groups (from a security perspective) are the following:
++ Critical: the source code is hard to understand and likely to be faulty or vulnerable.
++ High: the source code has some complexity, but it can be understood after reading it a couple of times.
++ Medium: the source code can be understood well, but it would benefit from some refactoring. 
++ Low: the source code is easy to understand.
++ Lowest: the source code does not need any maintenance change.
+You will have the source code for the function under analysis. 
+
+Here is the Function Code: 
+
+[The Function Code]
