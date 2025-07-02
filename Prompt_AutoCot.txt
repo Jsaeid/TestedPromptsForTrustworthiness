@@ -1,0 +1,65 @@
+Function Ranking in Priority Groups
+Software vulnerabilities are frequently identified in software that is already in production. Consequently, software development teams must make changes in the source code to fix those vulnerabilities, which are usually present in code units that are lengthy and complex.
+Therefore, we need more than just vulnerability detection to identify the most (potentially) problematic code units in the early phases of development so that the software development team can analyze them.
+To help develop such a technique, we kindly ask you to categorize a C function into priority groups based on its security and complexity. The priority groups (from a security perspective) are the following:
+    • Critical: The source code is hard to understand and likely to be faulty or vulnerable.
+    • High: The source code has some complexity, but it can be understood after reading it a couple of times.
+    • Medium: The source code can be understood well, but it would benefit from some refactoring.
+    • Low: The source code is easy to understand.
+    • Lowest: The source code does not need any maintenance change.
+
+Step 1: Generate Auto-CoT Reasoning Examples
+Before analyzing a new function, we will first generate reasoning steps for similar functions.
+Generate reasoning examples for different C functions:
+
+🔹 Function 1:
+void processData(char *input) {
+    char buffer[50];
+    strcpy(buffer, input);
+    printf("Processed: %s\n", buffer);
+}
+Step-by-step reasoning:
+    • Code Complexity: Simple function, but lacks input validation.
+    • Security Risks: Uses strcpy, which makes it vulnerable to buffer overflows.
+    • Maintainability: Needs significant changes to ensure safety.
+Conclusion: Critical
+
+🔹 Function 2:
+int compute(int a, int b) {
+    if (a > 10) {
+        if (b > 20) {
+            return a * b;
+        } else {
+            return a + b;
+        }
+    } else {
+        return a - b;
+    }
+}
+Step-by-step reasoning:
+    • Code Complexity: Nested if-else makes it slightly harder to read.
+    • Security Risks: No major vulnerabilities, but logical complexity might lead to errors.
+    • Maintainability: Could benefit from refactoring to simplify conditionals.
+Conclusion: High
+
+🔹 Function 3:
+void printMessage(const char* msg) {
+    printf("Message: %s\n", msg);
+}
+Step-by-step reasoning:
+    • Code Complexity: Very simple, no branching or deep nesting.
+    • Security Risks: No unsafe memory operations.
+    • Maintainability: No changes needed.
+Conclusion: Lowest
+
+Step 2: Apply Auto-CoT to a New Function
+Here is the function code under analysis:
+
+[The Function Code]
+    
+Step-by-step reasoning:
+    1. Code Complexity: (Explain automatically based on structure)
+    2. Security Risks: (Explain automatically based on vulnerabilities)
+    3. Maintainability: (Explain automatically based on readability)
+Conclusion: Based on the reasoning above, the function falls into the [Auto-Generated Priority Group].
+    
