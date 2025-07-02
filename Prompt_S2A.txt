@@ -87,8 +87,7 @@ Conclusion: P3 (Medium Priority)
 Step 4: Apply S2A to a New Function
 Here is the function under analysis:
 
-[Function Code]
+[The Function Code]
     
 Analyze the function using the same S2A reasoning process and derive a final ranking.
    
-asyncio.run(chat())
