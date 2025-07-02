@@ -1,0 +1,50 @@
+Function Ranking in Priority Groups
+Software vulnerabilities are frequently identified in software that is already in production. Consequently, software development teams must make changes in the source code to fix those vulnerabilities, which are usually present in code units that are lengthy and complex.
+Therefore, we need more than just vulnerability detection to identify the most (potentially) problematic code units in the early phases of development so that the software development team can analyze them.
+To help develop such a technique, we kindly ask you to categorize a C function into priority groups based on its security and complexity. The priority groups (from a security perspective) are the following:
+    • Critical: The source code is hard to understand and likely to be faulty or vulnerable.
+    • High: The source code has some complexity, but it can be understood after reading it a couple of times.
+    • Medium: The source code can be understood well, but it would benefit from some refactoring.
+    • Low: The source code is easy to understand.
+    • Lowest: The source code does not need any maintenance change.
+    
+Reasoning Process:
+When analyzing the function, consider the following aspects step by step:
+    1. Code Complexity:
+        ◦ Does the function have deep nesting, recursion, or multiple control structures?
+        ◦ Are there many dependencies between variables?
+        ◦ Is the logic difficult to follow at a glance?
+    2. Security Risks:
+        ◦ Does the function manipulate memory directly (e.g., malloc, free, strcpy)?
+        ◦ Are there any potential buffer overflows, race conditions, or injection vulnerabilities?
+        ◦ Are user inputs properly validated?
+    3. Maintainability & Readability:
+        ◦ Can a developer understand the function without excessive effort?
+        ◦ Does the function follow clean coding principles?
+        ◦ Would refactoring improve clarity and reduce potential bugs?
+
+Example Analysis Using CoT:
+Function Code:
+void processData(char *input) {
+    char buffer[50];
+    strcpy(buffer, input);  // Potential buffer overflow
+    printf("Processed: %s\n", buffer);
+}
+
+Step-by-Step Analysis:
+    1. Code Complexity: The function is relatively short, but it lacks input validation, making it hard to determine safe execution.
+    2. Security Risks: The function uses strcpy without checking input size, making it vulnerable to buffer overflows.
+    3. Maintainability & Readability: While the function is simple, it has a critical flaw that requires fixing.
+Conclusion: Since this function introduces a serious security risk and is difficult to use safely, it should be classified as Critical.
+
+New Function to Rank:
+Here is the function code under analysis:
+
+[The Function Code]
+
+Step-by-Step Analysis:
+    1. Code Complexity: (Explain)
+    2. Security Risks: (Explain)
+    3. Maintainability & Readability: (Explain)
+Conclusion: Based on the reasoning above, the appropriate priority group for this function is [Your Answer].
+   
