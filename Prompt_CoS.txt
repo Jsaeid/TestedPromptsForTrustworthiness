@@ -1,0 +1,91 @@
+Function Ranking in Priority Groups
+Software vulnerabilities are frequently identified in software that is already in production. Consequently, software development teams must make changes in the source code to fix those vulnerabilities, which are usually present in code units that are lengthy and complex.
+Therefore, we need more than just vulnerability detection to identify the most (potentially) problematic code units in the early phases of development so that the software development team can analyze them.
+To help develop such a technique, we kindly ask you to categorize a C function into priority groups based on security risks, complexity, and maintainability using symbolic representation rules. The priority groups (from a security perspective) are:
+    • Critical (P5): The source code is hard to understand and likely to be faulty or vulnerable.
+    • High (P4): The source code has some complexity, but it can be understood after reading it a couple of times.
+    • Medium (P3): The source code can be understood well, but it would benefit from some refactoring.
+    • Low (P2): The source code is easy to understand.
+    • Lowest (P1): The source code does not need any maintenance change.
+
+Step 1: Define Symbolic Representation Rules
+Each function is evaluated using three factors:
+    1. Security Risk (S)
+        ◦ S = 3 → High-risk vulnerability (e.g., buffer overflow, memory leaks).
+        ◦ S = 2 → Medium-risk vulnerability (e.g., unchecked input, race conditions).
+        ◦ S = 1 → No security risk.
+    2. Code Complexity (C)
+        ◦ C = 3 → Deep nesting, recursion, or unclear logic.
+        ◦ C = 2 → Moderate complexity, but still readable.
+        ◦ C = 1 → Simple and easy to understand.
+    3. Maintainability (M)
+        ◦ M = 3 → Requires significant refactoring.
+        ◦ M = 2 → Moderate maintainability concerns.
+        ◦ M = 1 → Clean, well-structured, and requires no refactoring.
+Final Priority Calculation
+The final priority score P is calculated as:
+
+P = ((S*0.5) + (C*0.3) + (M*0.2)) / 3
+
+where:
+    • Security Risk (S) contributes 50% to the final ranking.
+    • Complexity (C) contributes 30%.
+    • Maintainability (M) contributes 20%.
+The priority classification is determined by:
+P ≥ 2.5  ​⇒ P5 (Critical)
+2.0 ≤ P < 2.5  ⇒ P4 (High)
+1.5 ≤ P < 2.0   ⇒ P3 (Medium)
+1.0 ≤ P < 1.5   ⇒ P2 (Low)
+P < 1.0 ⇒ P1 (Lowest)
+
+Step 2: Example Evaluations Using CoS
+Example 1:
+void processData(char *input) {
+    char buffer[50];
+    strcpy(buffer, input);  // Potential buffer overflow
+    printf("Processed: %s\n", buffer);
+}
+Symbolic Representation:
+    • S = 3 (Buffer overflow vulnerability)
+    • C = 1 (Simple logic, no deep nesting)
+    • M = 3 (Requires refactoring for security)
+
+P = ((3*0.5) + (1*0.3) + (3*0.2)) / 3 = (1.5 + 0.3 + 0.6) / 3 = 2.4
+ 
+Classification: P4 (High)
+
+Example 2:
+int compute(int a, int b) {
+    if (a > 10) {
+        if (b > 20) {
+            return a * b;
+        } else {
+            return a + b;
+        }
+    } else {
+        return a - b;
+    }
+}
+Symbolic Representation:
+    • S = 1 (No security concerns)
+    • C = 2 (Nested if-else makes it slightly harder to read)
+    • M = 2 (Could be refactored for clarity)
+
+P = ((1*0.5) + (2*0.3) + (2*0.2)) / 3 = (0.5 + 0.6 + 0.4) / 3 = 1.5
+
+Classification: P3 (Medium)
+
+Step 3: Apply CoS to a New Function
+Here is the function under analysis:  
+
+[The Function Code]
+    
+Symbolic Representation:
+    • Security Risk (S): (Analyze function)
+    • Code Complexity (C): (Analyze function)
+    • Maintainability (M): (Analyze function)
+
+P = ((S*0.5) + (C*0.3) + (M*0.2)) / 3
+
+Classification: The function falls into [Final Priority Group].
+    
