@@ -1,0 +1,22 @@
+Task: Function Ranking in Priority Groups
+
+Context:
+Software vulnerabilities are often discovered in production software, requiring development teams to modify the source code. These vulnerabilities typically reside in code units that are lengthy and complex. To proactively address potential issues, it is crucial to rank code units in priority groups during early development phases. This allows development teams to focus on the most problematic code units for analysis and improvement.
+
+Objective:
+Map the provided C function into one of the following priority groups based on its complexity and security risks:
+
+Critical: The source code is hard to understand and highly likely to be faulty or vulnerable.
+High: The source code has some complexity but can be understood after careful review.
+Medium: The source code is understandable but could benefit from refactoring.
+Low: The source code is easy to understand.
+Lowest: The source code requires no maintenance changes.
+
+
+Input:
+this C function:
+        
+[The Function Code]
+    
+Output Requirement:
+Return only the priority group the function belongs to. Do not include any additional comments or explanations
