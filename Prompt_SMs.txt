@@ -22,7 +22,7 @@ Based on the Software Metrics, Map the provided C function into one of the follo
 Input:
 this C function:
         
-[Function Code]
+[The Function Code]
         
     
 Output Requirement:
