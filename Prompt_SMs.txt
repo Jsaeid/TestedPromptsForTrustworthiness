@@ -1,0 +1,30 @@
+Task: Function Ranking in Priority Groups
+
+Context:
+Software vulnerabilities are often discovered in production software, requiring development teams to modify the source code.
+These vulnerabilities typically reside in code units that are lengthy and complex. 
+To proactively address potential issues, it is crucial to rank code units in priority groups during early development phases. 
+This allows development teams to focus on the most problematic code units for analysis and improvement.
+The main Software Metrics are:
+1. Complexity: indicate how complex the code unit is, e.g. cyclomatic complexity
+2. Volume: characterize the size of the code unit, e.g. lines of code
+3. Coupling: indicate how coupled or not the code unit is with other units, e.g. coupling between objects
+4. Cohesion: characterize how cohesive or not the code unit is, e.g. lack of cohesion
+
+Objective:
+Based on the Software Metrics, Map the provided C function into one of the following priority groups based on its complexity and security risks:
+1. Critical: the source code is hard to understand and likely to be faulty or vulnerable.
+2. High: the source code has some complexity, but it can be understood after reading it a couple of times.
+3. Medium: the source code can be understood well, but it would benefit from some refactoring.
+4. Low: the source code is easy to understand.
+5. Lowest: the source code does not need any maintenance change.
+
+Input:
+this C function:
+        
+[Function Code]
+        
+    
+Output Requirement:
+Return only the priority group the function belongs to. Do not include any additional comments or explanations in xml format or json
+    
