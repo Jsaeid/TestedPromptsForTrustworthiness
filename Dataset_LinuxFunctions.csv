@@ -1,0 +1,71 @@
+﻿rowid,Id,Label,LinkUrl,CriticalityLevel,LineCount,VulnerabilityLevel,SCOLPScore,SCOLPScoreReversed
+1,1,A,"https://github.com/torvalds/linux/blob/327eaf738ff97d19491362e30497954105d60414/fs/ext4/xattr.c, lines(1558-1795)",1,238,1,5,1
+2,2,B,"https://github.com/torvalds/linux/blob/618d919cae2fcaadc752f27ddac8b939da8b441a/fs/cifs/smb2pdu.c, lines(3717-3792)",3,76,1,3,3
+3,3,C,"https://github.com/torvalds/linux/blob/242658ff99ab9d87e704475ef78c3102ead344cf/sound/core/timer.c, lines(1660-1760)",2,101,1,4,2
+4,4,D,"https://github.com/torvalds/linux/blob/8fde12ca79aff9b5ba951fce1a2641901b8d8e64/fs/fuse/dev.c, lines(2006-2088)",2,83,1,4,2
+5,5,E,"https://github.com/torvalds/linux/blob/8fde12ca79aff9b5ba951fce1a2641901b8d8e64/fs/splice.c, lines(1512-1622)",2,111,1,3,3
+6,6,F,"https://github.com/torvalds/linux/blob/5369a762c882c0b6e9599e4ebbb3a9ba9eee7e2d/fs/ext4/xattr.c, lines(2309-2455)",1,147,2,5,1
+7,7,G,"https://github.com/torvalds/linux/blob/8605330aac5a5785630aec8f64378a54891937cc/net/core/skbuff.c, lines(3597-3687)",3,91,2,4,2
+8,8,H,"https://github.com/torvalds/linux/blob/946e51f2bf37f1656916eb75bd0742ba33983c28/fs/dcache.c, lines(871-927)",4,57,2,3,3
+9,9,I,"https://github.com/torvalds/linux/blob/daac07156b330b18eb5071aec4b3ddca1c377f2c/sound/usb/mixer.c, lines(1820-1987)",3,168,2,5,1
+10,10,J,"https://github.com/torvalds/linux/blob/daac07156b330b18eb5071aec4b3ddca1c377f2c/sound/usb/mixer.c, lines(1028-1138)",4,111,2,5,1
+11,11,K,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c, lines(6063-6139)",2,77,0,4,2
+12,12,L,"https://github.com/torvalds/linux/blob/088aaf17aa79300cab14dbee2569c58cfafd7d6e/fs/cifs/smb2pdu.c, lines(3268-3349)",3,82,0,4,2
+13,13,M,"https://github.com/torvalds/linux/blob/946e51f2bf37f1656916eb75bd0742ba33983c28/fs/dcache.c, lines(1021-1124)",1,104,1,5,1
+14,14,N,"https://github.com/torvalds/linux/blob/15fab63e1e57be9fdb5eec1bbc5916e9825e9acb/mm/hugetlb.c, lines(1862-1921)",4,60,0,3,3
+15,15,O,"https://github.com/torvalds/linux/blob/daac07156b330b18eb5071aec4b3ddca1c377f2c/sound/usb/mixer.c, lines(330-393)",3,64,0,3,3
+16,16,P,"https://github.com/torvalds/linux/blob/15fab63e1e57be9fdb5eec1bbc5916e9825e9acb/fs/fuse/dev.c, lines(2006-2088)",2,83,1,4,2
+17,17,Q,"https://github.com/torvalds/linux/blob/946e51f2bf37f1656916eb75bd0742ba33983c28/fs/dcache.c, lines(1406-1463)",4,58,1,4,2
+18,18,R,"https://github.com/torvalds/linux/blob/cec8f96e49d9be372fdb0c3836dcf31ec71e457e/sound/core/timer.c, lines(1574-1628)",3,55,0,3,3
+19,19,S,"https://github.com/torvalds/linux/blob/b3eaa9fc5cd0a4d74b18f6b8dc617aeaf1873270/kernel/futex.c, lines(2109-2181)",3,73,0,3,3
+20,20,T,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c, lines(11692-11757)",3,66,0,4,2
+21,21,U,"https://github.com/torvalds/linux/blob/0f2ff82e11c86c05d051cae32b58226392d33bbf/drivers/gpu/drm/vc4/vc4_gem.c, lines(581-691)",1,111,0,4,2
+22,22,V,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c, lines(3323-3450)",3,128,0,5,1
+23,23,W,"https://github.com/torvalds/linux/blob/946e51f2bf37f1656916eb75bd0742ba33983c28/fs/dcache.c, lines(473-524)",4,52,1,3,3
+24,24,X,"https://github.com/torvalds/linux/blob/15fab63e1e57be9fdb5eec1bbc5916e9825e9acb/kernel/trace/trace.c, lines(7919-7975)",1,57,0,4,2
+25,25,Y,"https://github.com/torvalds/linux/blob/15fab63e1e57be9fdb5eec1bbc5916e9825e9acb/kernel/trace/trace.c, lines(5362-5457)",2,96,0,3,3
+26,26,Z,"https://github.com/torvalds/linux/blob/15fab63e1e57be9fdb5eec1bbc5916e9825e9acb/fs/splice.c, lines(1631-1708)",1,78,1,3,3
+28,28,66,"https://github.com/torvalds/linux/blob/15fab63e1e57be9fdb5eec1bbc5916e9825e9acb/fs/splice.c,lines(1512-1626)",2,115,1,4,2
+30,30,68,"https://github.com/torvalds/linux/blob/088aaf17aa79300cab14dbee2569c58cfafd7d6e/fs/cifs/smb2pdu.c,lines(3421-3494)",2,74,1,4,2
+31,31,69,"https://github.com/torvalds/linux/blob/946e51f2bf37f1656916eb75bd0742ba33983c28/fs/dcache.c,lines(2483-2543)",1,61,1,4,2
+33,33,71,"https://github.com/torvalds/linux/blob/946e51f2bf37f1656916eb75bd0742ba33983c28/fs/dcache.c,lines(1762-1816)",1,55,1,4,2
+34,34,72,"https://github.com/torvalds/linux/blob/6a3eb3360667170988f8a6477f6686242061488a/fs/cifs/smb2pdu.c,lines(3716-3792)",3,77,1,3,3
+37,37,11,"https://github.com/torvalds/linux/blob/088aaf17aa79300cab14dbee2569c58cfafd7d6e/fs/cifs/smb2pdu.c,lines(719-923)",1,205,1,5,1
+40,40,14,"https://github.com/torvalds/linux/blob/088aaf17aa79300cab14dbee2569c58cfafd7d6e/fs/cifs/smb2pdu.c,lines(1576-1711)",2,136,1,5,1
+42,42,16,"https://github.com/torvalds/linux/blob/b3eaa9fc5cd0a4d74b18f6b8dc617aeaf1873270/kernel/futex.c,lines(746-863)",1,118,1,5,1
+44,44,18,"https://github.com/torvalds/linux/blob/088aaf17aa79300cab14dbee2569c58cfafd7d6e/fs/cifs/smb2pdu.c,lines(2572-2671)",2,100,1,5,1
+45,45,19,"https://github.com/torvalds/linux/blob/9a47e9cff994f37f7f0dbd9ae23740d0f64f9fe6/sound/core/timer.c,lines(233-304)",1,72,1,5,1
+46,46,20,"https://github.com/torvalds/linux/blob/cec8f96e49d9be372fdb0c3836dcf31ec71e457e/sound/core/timer.c,lines(309-369)",1,61,1,5,1
+47,47,21,"https://github.com/torvalds/linux/blob/77260807d1170a8cf35dbb06e07461a655f67eee/fs/ext4/super.c,lines(2480-2620)",1,141,1,4,2
+48,48,22,"https://github.com/torvalds/linux/blob/8605330aac5a5785630aec8f64378a54891937cc/net/core/skbuff.c,lines(2657-2773)",1,117,1,4,2
+49,49,23,"https://github.com/torvalds/linux/blob/95d78c28b5a85bacbc29b8dba7c04babb9b0d467/block/bio.c,lines(1322-1443)",1,122,1,4,2
+51,51,25,"https://github.com/torvalds/linux/blob/a5ec6ae161d72f01411169a938fa5f8baea16e8f/kernel/bpf/verifier.c,lines(4297-4404)",1,108,1,4,2
+52,52,26,"https://github.com/torvalds/linux/blob/77260807d1170a8cf35dbb06e07461a655f67eee/fs/ext4/super.c,lines(2344-2461)",1,118,1,4,2
+53,53,27,"https://github.com/torvalds/linux/blob/15fab63e1e57be9fdb5eec1bbc5916e9825e9acb/mm/gup.c,lines(899-991)",3,93,1,4,2
+54,54,28,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c,lines(9508-9599)",1,92,1,4,2
+55,55,29,"https://github.com/torvalds/linux/blob/a5ec6ae161d72f01411169a938fa5f8baea16e8f/kernel/bpf/verifier.c,lines(2257-2344)",1,88,1,4,2
+56,56,30,"https://github.com/torvalds/linux/blob/5ecb01cfdf96c5f465192bdb2a4fd4a61a24c6cc/kernel/futex.c,lines(507-594)",1,88,1,4,2
+58,58,32,"https://github.com/torvalds/linux/blob/15fab63e1e57be9fdb5eec1bbc5916e9825e9acb/kernel/trace/trace.c,lines(7839-7917)",1,79,1,4,2
+59,59,33,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c,lines(3150-3227)",1,78,1,4,2
+63,63,37,"https://github.com/torvalds/linux/blob/95d78c28b5a85bacbc29b8dba7c04babb9b0d467/block/bio.c,lines(72-126)",1,55,1,4,2
+64,64,38,"https://github.com/torvalds/linux/blob/e09463f220ca9a1a1ecfda84fcda658f99a1f12a/fs/ext4/xattr.c,lines(800-852)",1,53,1,4,2
+65,65,39,"https://github.com/torvalds/linux/blob/677e806da4d916052585301785d847c3b3e6186a/net/xfrm/xfrm_user.c,lines(1003-1054)",1,52,1,4,2
+66,66,40,"https://github.com/torvalds/linux/blob/15fab63e1e57be9fdb5eec1bbc5916e9825e9acb/fs/fuse/dev.c,lines(1420-1469)",1,50,1,4,2
+67,67,41,"https://github.com/torvalds/linux/blob/6a3eb3360667170988f8a6477f6686242061488a/fs/cifs/smb2pdu.c,lines(3576-3708)",1,133,1,3,3
+68,68,42,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c,lines(11089-11193)",1,105,1,3,3
+69,69,43,"https://github.com/torvalds/linux/blob/6a3eb3360667170988f8a6477f6686242061488a/fs/cifs/smb2pdu.c,lines(3171-3266)",1,96,1,3,3
+71,71,45,"https://github.com/torvalds/linux/blob/f070ef2ac66716357066b683fb0baf55f8191a2e/net/ipv4/tcp_output.c,lines(454-549)",1,96,1,3,3
+72,72,46,"https://github.com/torvalds/linux/blob/8605330aac5a5785630aec8f64378a54891937cc/net/core/skbuff.c,lines(4839-4918)",1,80,1,3,3
+73,73,47,"https://github.com/torvalds/linux/blob/daac07156b330b18eb5071aec4b3ddca1c377f2c/sound/usb/mixer.c,lines(3430-3504)",1,75,1,3,3
+75,75,49,"https://github.com/torvalds/linux/blob/946e51f2bf37f1656916eb75bd0742ba33983c28/fs/dcache.c,lines(2007-2082)",1,76,1,3,3
+76,76,50,"https://github.com/torvalds/linux/blob/f070ef2ac66716357066b683fb0baf55f8191a2e/net/ipv4/tcp_output.c,lines(587-654)",1,68,1,3,3
+77,77,51,"https://github.com/torvalds/linux/blob/95d78c28b5a85bacbc29b8dba7c04babb9b0d467/block/bio.c,lines(652-717)",1,66,1,3,3
+78,78,52,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c,lines(6397-6460)",1,64,1,3,3
+80,80,54,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c,lines(6141-6203)",1,63,1,3,3
+81,81,55,"https://github.com/torvalds/linux/blob/77260807d1170a8cf35dbb06e07461a655f67eee/fs/ext4/super.c,lines(2805-2867)",1,63,1,3,3
+83,83,57,"https://github.com/torvalds/linux/blob/daac07156b330b18eb5071aec4b3ddca1c377f2c/sound/usb/mixer.c,lines(3239-3298)",1,60,1,3,3
+85,85,59,"https://github.com/torvalds/linux/blob/15fab63e1e57be9fdb5eec1bbc5916e9825e9acb/mm/gup.c,lines(523-579)",1,57,1,3,3
+86,86,60,"https://github.com/torvalds/linux/blob/e09463f220ca9a1a1ecfda84fcda658f99a1f12a/fs/ext4/xattr.c,lines(1101-1155)",1,55,1,3,3
+88,88,62,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c,lines(10746-10798)",1,53,1,3,3
+89,89,63,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c,lines(11017-11067)",1,51,1,3,3
+90,90,64,"https://github.com/torvalds/linux/blob/36ae3c0a36b7456432fedce38ae2f7bd3e01a563/arch/x86/kvm/vmx.c,lines(3097-3147)",1,51,1,3,3
